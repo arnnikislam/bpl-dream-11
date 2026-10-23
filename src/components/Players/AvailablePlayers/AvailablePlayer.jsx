@@ -2,7 +2,13 @@ import { Flag, User } from "lucide-react";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
-const AvailablePlayer = ({ playerData, coin, setCoin }) => {
+const AvailablePlayer = ({
+  playerData,
+  coin,
+  setCoin,
+  selectedPlayers,
+  setSelectedPlayers,
+}) => {
   const {
     image,
     name,
@@ -20,6 +26,10 @@ const AvailablePlayer = ({ playerData, coin, setCoin }) => {
       setIsSelected(true);
       setCoin(newCoin);
       toast.success(`${name} is selected.`);
+
+      // for selected players data showing
+      const newSelectedPlayers = [...selectedPlayers, playerData];
+      setSelectedPlayers(newSelectedPlayers);
     } else {
       toast.warn("Insufficient Coin!");
     }
