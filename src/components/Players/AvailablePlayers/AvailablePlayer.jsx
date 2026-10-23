@@ -35,7 +35,7 @@ const AvailablePlayer = ({
     }
   };
   return (
-    <div className="card bg-base-100 w-96 shadow-xl">
+    <div className="card bg-base-100 w-75 mx-auto md:w-96 shadow-xl">
       <figure className="px-10 pt-10">
         <img src={image} className="rounded-xl h-50 w-75 " />
       </figure>

@@ -11,9 +11,9 @@ const AvailablePlayers = ({ playersDataRes, coin, setCoin }) => {
     <div className="container mx-auto">
       <div className="flex justify-between items-center max-w-5xl mx-auto ">
         {selectedType === "available" ? (
-          <h2 className="font-bold text-xl">Available Players</h2>
+          <h2 className="font-bold md:text-xl">Available Players</h2>
         ) : (
-          <h2 className="font-bold text-xl">
+          <h2 className="font-bold md:text-xl">
             Selected Player ({selectedPlayers.length}/{playersData.length})
           </h2>
         )}
