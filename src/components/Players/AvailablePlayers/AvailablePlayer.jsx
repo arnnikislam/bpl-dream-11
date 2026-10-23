@@ -19,19 +19,27 @@ const AvailablePlayer = ({
     battingStyle,
     bowlingStyle,
   } = playerData;
-  const [isSelected, setIsSelected] = useState(false);
+  // const [isSelected, setIsSelected] = useState(false);
+  const isSelected = selectedPlayers.some(
+    (player) => player.id === playerData.id,
+  );
   const handleChoosePlayer = () => {
-    const newCoin = coin - price;
-    if (coin > price) {
-      setIsSelected(true);
+    if (isSelected) {
+      toast.info("This player is already selected.");
+      return;
+    }
+    if (coin < price) {
+      toast.warn("Insufficient credits!");
+      return;
+    }
+    if (coin >= price) {
+      const newCoin = coin - price;
       setCoin(newCoin);
       toast.success(`${name} is selected.`);
 
       // for selected players data showing
       const newSelectedPlayers = [...selectedPlayers, playerData];
       setSelectedPlayers(newSelectedPlayers);
-    } else {
-      toast.warn("Insufficient Coin!");
     }
   };
   return (
@@ -68,7 +76,8 @@ const AvailablePlayer = ({
             <h3 className="font-bold">Price: {price}$</h3>
             <button
               onClick={handleChoosePlayer}
-              className={`btn btn-outline ${isSelected ? "btn-disabled" : null}`}
+              className={`btn btn-outline`}
+              disabled={isSelected}
             >
               {isSelected ? "Selected" : "Choose Player"}
             </button>
