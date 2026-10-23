@@ -15,7 +15,7 @@ const Hero = () => {
             Assemble Your Ultimate Dream 11 Cricket Team
           </h1>
           <p className="mb-5 text-xl">Beyond Boundaries Beyond Limits</p>
-          <button className="btn btn-primary mb-6">Claim Free Credit</button>
+          <button className="btn bg-[#E7FE29] mb-6">Claim Free Credit</button>
         </div>
       </div>
     </div>
