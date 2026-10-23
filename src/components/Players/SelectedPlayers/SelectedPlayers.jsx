@@ -1,12 +1,16 @@
 import SelectedPlayer from "./SelectedPlayer";
 
-const SelectedPlayers = ({ selectedPlayers }) => {
+const SelectedPlayers = ({ selectedPlayers, setSelectedPlayers, coin, setCoin }) => {
   return (
     <div>
       {selectedPlayers.map((selectedPlayer, index) => (
         <SelectedPlayer
           key={index}
           selectedPlayer={selectedPlayer}
+          setSelectedPlayers={setSelectedPlayers}
+          selectedPlayers={selectedPlayers}
+          coin={coin}
+          setCoin={setCoin}
         ></SelectedPlayer>
       ))}
       <div className="w-[80%] mx-auto my-4">

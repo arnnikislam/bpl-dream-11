@@ -47,7 +47,12 @@ const AvailablePlayers = ({ playersDataRes, coin, setCoin }) => {
             ></AvailablePlayer>
           ))
         ) : (
-          <SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>
+          <SelectedPlayers
+            selectedPlayers={selectedPlayers}
+            setSelectedPlayers={setSelectedPlayers}
+            coin={coin}
+            setCoin={setCoin}
+          ></SelectedPlayers>
         )}
       </div>
     </div>
