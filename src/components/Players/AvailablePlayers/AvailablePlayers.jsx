@@ -2,12 +2,12 @@ import { useState } from "react";
 import AvailablePlayer from "./AvailablePlayer";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 
-const AvailablePlayers = ({ playersDataRes }) => {
+const AvailablePlayers = ({ playersDataRes, coin, setCoin }) => {
   const playersData = playersDataRes.data;
   const [selectedType, setSelectedType] = useState("available");
   return (
-    <>
-      <div className="flex justify-between items-center max-w-5xl mx-auto">
+    <div className="container mx-auto">
+      <div className="flex justify-between items-center max-w-5xl mx-auto ">
         {selectedType === "available" ? (
           <h2 className="font-bold text-xl">Available Players</h2>
         ) : (
@@ -34,13 +34,15 @@ const AvailablePlayers = ({ playersDataRes }) => {
             <AvailablePlayer
               key={playerData.id}
               playerData={playerData}
+              coin={coin}
+              setCoin={setCoin}
             ></AvailablePlayer>
           ))
         ) : (
           <SelectedPlayers></SelectedPlayers>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

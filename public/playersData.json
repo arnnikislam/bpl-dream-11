@@ -8,7 +8,7 @@
     "bowlingStyle": "Right-Arm Medium",
     "dateOfBirth": "1988-11-05",
     "rating": 4.9,
-    "price": 1500000,
+    "price": 1500,
     "currency": "USD",
     "isSelected": false,
     "image": "https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcQ1vV_f18rJFJ99gIKzMXgOuyzrtjlyyylfeoTsnxp3QrOCidc4GcLJrzHiaFJjPQibKp6dwWD3_eqeaJM"
@@ -22,7 +22,7 @@
     "bowlingStyle": "Right-Arm Off Break",
     "dateOfBirth": "1987-04-30",
     "rating": 4.8,
-    "price": 1400000,
+    "price": 1400,
     "currency": "USD",
     "isSelected": false,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGrrUCSylGR3glFDHCYZ6sJ5uHIqr0BbUHZiFA_p-8A&s=10"
@@ -36,7 +36,7 @@
     "bowlingStyle": "Right-Arm Fast",
     "dateOfBirth": "1993-12-06",
     "rating": 4.9,
-    "price": 1450000,
+    "price": 1450,
     "currency": "USD",
     "isSelected": false,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9bWMD5W6ZgR9FoRay4bcH8vjeaLnmIXk9wiAVcKV9pXt8WRe7z-xWIE_hHtPzvm1-C9-58ZQ4CFYE41FUQC6ahjr4aQyv3QLKjFc-4Q&s=10"
@@ -50,7 +50,7 @@
     "bowlingStyle": "Left-Arm Orthodox",
     "dateOfBirth": "1988-12-06",
     "rating": 4.7,
-    "price": 1200000,
+    "price": 1200,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Ravindra%20Jadeja"
@@ -64,7 +64,7 @@
     "bowlingStyle": "Right-Arm Medium",
     "dateOfBirth": "1981-07-07",
     "rating": 4.9,
-    "price": 1300000,
+    "price": 1300,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=MS%20Dhoni"
@@ -78,7 +78,7 @@
     "bowlingStyle": "Right-Arm Off Break",
     "dateOfBirth": "1994-10-15",
     "rating": 4.7,
-    "price": 1250000,
+    "price": 1250,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Babar%20Azam"
@@ -92,7 +92,7 @@
     "bowlingStyle": "Left-Arm Fast",
     "dateOfBirth": "2000-04-06",
     "rating": 4.6,
-    "price": 1100000,
+    "price": 1100,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Shaheen%20Afridi"
@@ -106,7 +106,7 @@
     "bowlingStyle": "Right-Arm Leg Break",
     "dateOfBirth": "1989-06-02",
     "rating": 4.7,
-    "price": 1150000,
+    "price": 1150,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Steve%20Smith"
@@ -120,7 +120,7 @@
     "bowlingStyle": "Right-Arm Fast",
     "dateOfBirth": "1993-05-08",
     "rating": 4.7,
-    "price": 1200000,
+    "price": 1200,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Pat%20Cummins"
@@ -134,7 +134,7 @@
     "bowlingStyle": "Right-Arm Fast Medium",
     "dateOfBirth": "1991-06-04",
     "rating": 4.8,
-    "price": 1350000,
+    "price": 1350,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Ben%20Stokes"
@@ -148,7 +148,7 @@
     "bowlingStyle": "Right-Arm Off Break",
     "dateOfBirth": "1990-12-30",
     "rating": 4.7,
-    "price": 1200000,
+    "price": 1200,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Joe%20Root"
@@ -162,7 +162,7 @@
     "bowlingStyle": "Right-Arm Off Break",
     "dateOfBirth": "1990-08-08",
     "rating": 4.7,
-    "price": 1150000,
+    "price": 1150,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Kane%20Williamson"
@@ -176,7 +176,7 @@
     "bowlingStyle": "Left-Arm Orthodox",
     "dateOfBirth": "1987-03-24",
     "rating": 4.6,
-    "price": 1000000,
+    "price": 1000,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Shakib%20Al%20Hasan"
@@ -190,7 +190,7 @@
     "bowlingStyle": "Right-Arm Medium",
     "dateOfBirth": "1987-06-09",
     "rating": 4.4,
-    "price": 800000,
+    "price": 8000,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Mushfiqur%20Rahim"
@@ -204,7 +204,7 @@
     "bowlingStyle": "Right-Arm Leg Break",
     "dateOfBirth": "1998-09-20",
     "rating": 4.7,
-    "price": 1100000,
+    "price": 1100,
     "currency": "USD",
     "isSelected": false,
     "image": "https://ui-avatars.com/api/?size=400&background=random&name=Rashid%20Khan"

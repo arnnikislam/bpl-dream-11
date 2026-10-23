@@ -1,6 +1,8 @@
 import { Flag, User } from "lucide-react";
+import { useState } from "react";
+import { toast } from "react-toastify";
 
-const AvailablePlayer = ({ playerData }) => {
+const AvailablePlayer = ({ playerData, coin, setCoin }) => {
   const {
     image,
     name,
@@ -11,10 +13,21 @@ const AvailablePlayer = ({ playerData }) => {
     battingStyle,
     bowlingStyle,
   } = playerData;
+  const [isSelected, setIsSelected] = useState(false);
+  const handleChoosePlayer = () => {
+    const newCoin = coin - price;
+    if (coin > price) {
+      setIsSelected(true);
+      setCoin(newCoin);
+      toast.success(`${name} is selected.`);
+    } else {
+      toast.warn("Insufficient Coin!");
+    }
+  };
   return (
     <div className="card bg-base-100 w-96 shadow-xl">
       <figure className="px-10 pt-10">
-        <img src={image} className="rounded-xl h-50 w-75" />
+        <img src={image} className="rounded-xl h-50 w-75 " />
       </figure>
       <div className="card-body">
         <h2 className="card-title">
@@ -43,7 +56,12 @@ const AvailablePlayer = ({ playerData }) => {
           </div>
           <div className="text-lg flex justify-between mt-2 ">
             <h3 className="font-bold">Price: {price}$</h3>
-            <button className="btn btn-outline">Choose Player</button>
+            <button
+              onClick={handleChoosePlayer}
+              className={`btn btn-outline ${isSelected ? "btn-disabled" : null}`}
+            >
+              {isSelected ? "Selected" : "Choose Player"}
+            </button>
           </div>
         </div>
       </div>

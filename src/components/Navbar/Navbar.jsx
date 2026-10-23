@@ -2,7 +2,7 @@ import NavLinks from "./NavLinks";
 import logoImg from "../../assets/logo.png";
 import currencyLogo from "../../assets/Currency.png";
 
-const Navbar = () => {
+const Navbar = ({ coin }) => {
   const navLinks = [
     { id: 1, label: "Home", path: "/" },
     { id: 2, label: "Fixture", path: "/fixture" },
@@ -13,7 +13,7 @@ const Navbar = () => {
     <NavLinks key={link.id} link={link}></NavLinks>
   ));
   return (
-    <nav>
+    <nav className="sticky top-0 z-50 container mx-auto">
       <div className="navbar bg-base-100 shadow-sm">
         <div className="navbar-start">
           <div className="dropdown">
@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="navbar-end space-x-8">
           <ol className="md:flex hidden gap-6">{link}</ol>
           <a className="btn font-bold">
-            0 Coin <img src={currencyLogo} alt="currency" />
+            {coin} <img src={currencyLogo} alt="currency" />
           </a>
         </div>
       </div>
