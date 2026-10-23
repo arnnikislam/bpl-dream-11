@@ -1,5 +1,4 @@
 import { Flag, User } from "lucide-react";
-import { useState } from "react";
 import { toast } from "react-toastify";
 
 const AvailablePlayer = ({
